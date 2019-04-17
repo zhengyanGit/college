@@ -1,0 +1,264 @@
+/* reset */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+input,
+button,
+textarea,
+menu {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+address,
+figure,
+figcaption,
+menu,
+details {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th {
+  text-align: left;
+  font-weight: 400;
+}
+
+html,
+body,
+img,
+iframe,
+abbr {
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+  font-size: 100%;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+label,
+summary {
+  cursor: default;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+del,
+ins,
+u,
+s,
+a,
+a:hover {
+  text-decoration: none;
+}
+
+body,
+textarea,
+input,
+button,
+select,
+keygen,
+legend {
+  font: 12px/1.5 Arial, "Microsoft YaHei", "simsun";
+  color: #000;
+  outline: 0;
+}
+
+body {
+  background: #fff;
+}
+
+a {
+  color: #000;
+  font-family: Arial, "Microsoft YaHei", "simsun";
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #aaa;
+  font-size: 13px;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #aaa;
+  font-size: 13px;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #aaa;
+  font-size: 13px;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #aaa;
+  font-size: 13px;
+}
+
+img {
+  vertical-align: middle;
+}
+
+::-webkit-scrollbar {
+  width: auto;
+  height: 8px;
+  background-color: #e9edf4;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -o-border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #9bbbfa;
+}
+
+
+/*清除浮动*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+/*隐藏*/
+.hidden {
+  display: none;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-size: 14px;
+  font-family: "微软雅黑";
+  height: 100%;
+  width: 100%;
+}
+
+.full-page {
+  width: 100%;
+  height: 100%;
+}
+
+.index-home {
+  background: #fafafa url("../img/bg.jpg") no-repeat;
+}
+
+
+/* 边距 */
+.pl50 {
+  padding-right: 50px;
+}
+
+.pr20 {
+  padding-right: 20px;
+}
+
+.mr5 {
+  margin-right: 5px;
+}
+
+
+/* 字体图标库 */
+@font-face {
+  font-family: 'iconfont';
+  /* project id 1134206 */
+  src: url('//at.alicdn.com/t/font_1134206_lushjz2f6pp.eot');
+  src: url('//at.alicdn.com/t/font_1134206_lushjz2f6pp.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1134206_lushjz2f6pp.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1134206_lushjz2f6pp.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1134206_lushjz2f6pp.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1134206_lushjz2f6pp.svg#iconfont') format('svg');
+}
+
+.bfb80 {
+  width: 80%;
+  margin: auto;
+}
+
+
+/* 背景颜色 */
+.color-white {
+  background-color: #fff;
+}
