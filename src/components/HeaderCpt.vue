@@ -36,7 +36,7 @@
           </el-col>
           <el-col :span="3">
             <div class="grid-content bg-purple">
-              <router-link active-class="active" :to="{ path: '/school/list'}">高招数据</router-link>
+              <router-link active-class="active" :to="{ path: '/school'}">高招数据</router-link>
             </div>
           </el-col>
           <el-col :span="3">

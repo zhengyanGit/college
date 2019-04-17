@@ -1,5 +1,5 @@
 <template>
-  <div class="school-bg">
+  
     <div class="school-head-bg">
       <div class="bfb80">
         <a href="#" class="scholl-collect">
@@ -18,24 +18,52 @@
         </div>
       </div>
     </div>
+
 </template>
 <script>
 export default {
-  name: "scholl-component",
-  props: ["title"],
-  data: () => ({}),
-  mounted: function() {}
+  name: "scholl-component"
 };
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.title-compont-h2 {
+.school-head-bg {
+  width: 100%;
+  height: 240px;
+  background: #52b8f5;
+}
+.scholl-tag {
+  padding-top: 60px;
+}
+.scholl-tag-title {
   font-size: 20px;
-  border-left: solid 5px #3293f7;
-  padding-left: 13px;
-  color: #040404;
-  font-weight: bold;
-  margin-top: 27px;
-  margin-bottom: 27px;
+  color: #fff;
+  float: left;
+  margin-right: 20px;
+}
+.scholl-tag-item {
+  float: left;
+  font-size: 14px;
+  background-color: #ff7c2e;
+  padding: 6px 10px;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.scholl-tag-item2 {
+  background-color: #00a100;
+}
+.scholl-collect {
+  font-size: 14px;
+  color: #fff;
+  float: right;
+  padding: 20px 30px 0 0;
+}
+.scholl-icon {
+  margin-top: 70px;
+}
+.scholl-icon-img {
+  float: left;
+  margin-right: 18px;
 }
 </style>
