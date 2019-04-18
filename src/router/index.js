@@ -64,12 +64,12 @@ export default new Router({
             component: SchoolIndexPage,
             children: [
                 {// 院校名录
-                    path: '/school/list',
+                    path: '',
                     name: 'SchoolListPage',
                     component: SchoolListPage,
                 },
                 {
-                    path: '/school/major',
+                    path: 'major',
                     name: 'SchoolMajorPage',
                     component: SchoolMajorPage
                 }

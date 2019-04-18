@@ -2,7 +2,8 @@
   <div class="bfb80 scholl-list-body">
     <div class="school-list-filter-box">
       <div class="school-list-seach-box">
-        <div class="school-list-seach">
+        <scholl-search-component :data="seachData" title="院校查询"></scholl-search-component>
+        <!-- <div class="school-list-seach">
           <h2 class="school-list-seach-title">院校查询</h2>
           <div class="school-list-seach-bfb70">
             <el-input placeholder="院校名称" v-model="schollName" class="shool-list-seach-input">
@@ -14,7 +15,7 @@
               >搜 索</el-button>
             </el-input>
           </div>
-        </div>
+        </div>-->
       </div>
       <ul class="school-list-filter-body">
         <li class="clearfix">
@@ -134,8 +135,12 @@
 
 
 <script>
+import SchollSearchComponent from "../../_components/scholl-search-component.vue";
 export default {
   name: "SchoolListPage",
+  components: {
+    SchollSearchComponent
+  },
   data() {
     return {
       schollName: "", //院校名称 搜索字段
