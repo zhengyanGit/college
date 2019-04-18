@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="left-nav">
-      <router-link :to="{ path: '/school/details/123'}">院校介绍</router-link>
-      <router-link :to="{ path: '/school/details/123/faculty'}">院校介绍</router-link>
+      <router-link :to="{ path: '/school/details/123'}">专业介绍</router-link>
+      <router-link :to="{ path: '/school/details/123/faculty'}">开设院校</router-link>
     </div>
     <div class="contain">
       <div>学校名录详情{{$route.params.id}}</div>

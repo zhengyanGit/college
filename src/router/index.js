@@ -13,7 +13,10 @@ import RegisterPage from '@/views/spa/RegisterPage'
 import NotFindePage from '@/views/spa/404'
 
 //学校名录
-import SchoolIndexPage from '@/views/school/SchoolIndexPage'
+import SchoolIndexPage from '@/views/school/SchoolIndexPage'  // 高招数据
+import SchoolListPage from '@/views/school/children/SchoolListPage'  //院校名录
+import SchoolMajorPage from '@/views/school/children/SchoolMajorPage'  //专业介绍
+
 import SchollDetailsPage from '@/views/school/SchollDetailsPage'
 import SchollDetailsIntroPage from '@/views/school/details/SchollDetailsIntroPage' // 详情-简介
 import SchollDetailsFacultyPage from '@/views/school/details/SchollDetailsFacultyPage' //详情 - 院系
@@ -47,100 +50,112 @@ Vue.use(Router)
 export default new Router({
     mode: 'history',
     routes: [{
+        path: '/',
+        name: 'FrontPage',
+        component: FrontPage,
+        children: [{
             path: '/',
-            name: 'FrontPage',
-            component: FrontPage,
-            children: [{
-                    path: '/',
-                    name: 'HomePage',
-                    component: HomePage,
-                },
-                { // 高校数据-列表
-                    path: '/school',
-                    name: 'SchoolIndexPage',
-                    component: SchoolIndexPage,
-                },
-                { // 高校数据-详情
-                    path: '/school/details/:id',
-                    name: 'SchollDetailsPage',
-                    component: SchollDetailsPage,
-                    children: [{
-                        path: '',
-                        name: 'SchollDetailsIntroPage',
-                        component: SchollDetailsIntroPage,
-                    }, {
-                        path: 'faculty',
-                        name: 'SchollDetailsFacultyPage',
-                        component: SchollDetailsFacultyPage,
-                    }]
-                },
-                { // 志愿填报
-                    path: '/reported/list',
-                    name: 'ReportedListPage',
-                    component: ReportedListPage,
-                },
-                { // 专业测评
-                    path: '/appraisal',
-                    name: 'AppraisalIndexPage',
-                    component: AppraisalIndexPage,
-                },
-                { // 政策解读
-                    path: '/entrance',
-                    name: 'EntranceListPage',
-                    component: EntranceListPage,
-                },
-                { // 选科
-                    path: '/entrance/specialty',
-                    name: 'SpecialtyListPage',
-                    component: SpecialtyListPage,
-                },
-                { //自主招生
-                    path: '/recruit/list',
-                    name: 'RecruitListPage',
-                    component: RecruitListPage
-                },
-                { //社区
-                    path: '/community/info',
-                    name: 'CommunityInfoPage',
-                    component: CommunityInfoPage
-                }
-            ]
+            name: 'HomePage',
+            component: HomePage,
         },
-        {
-            path: '/platform',
-            name: 'PlatformPage',
-            component: PlatformPage,
-            children: [{
-                    path: '/',
-                    name: 'WelcomePage',
-                    component: WelcomePage
+        { // 高校数据-列表
+            path: '/school',
+            name: 'SchoolIndexPage',
+            component: SchoolIndexPage,
+            children: [
+                {// 院校名录
+                    path: '/school/list',
+                    name: 'SchoolListPage',
+                    component: SchoolListPage,
                 },
                 {
-                    path: 'release',
-                    name: 'ReleasePage',
-                    component: ReleasePage
+                    path: '/school/major',
+                    name: 'SchoolMajorPage',
+                    component: SchoolMajorPage
                 }
             ]
         },
-        {
-            path: '/login',
-            name: 'LoginPage',
-            component: LoginPage
+        { // 高校数据-详情
+            path: '/school/details/:id',
+            name: 'SchollDetailsPage',
+            component: SchollDetailsPage,
+            children: [{
+                path: '',
+                name: 'SchollDetailsIntroPage',
+                component: SchollDetailsIntroPage,
+            }, {
+                path: 'faculty',
+                name: 'SchollDetailsFacultyPage',
+                component: SchollDetailsFacultyPage,
+            }]
         },
-        {
-            path: '/register',
-            name: 'RegisterPage',
-            component: RegisterPage
+        { // 志愿填报
+            path: '/reported/list',
+            name: 'ReportedListPage',
+            component: ReportedListPage,
         },
-        {
-            path: '*',
-            name: 'NotFindePage',
-            component: NotFindePage
+        { // 专业测评
+            path: '/appraisal',
+            name: 'AppraisalIndexPage',
+            component: AppraisalIndexPage,
         },
-        { //动态路由
-            path: '/list/:listid',
-            name: 'list',
-            component: list
+        { // 政策解读
+            path: '/entrance',
+            name: 'EntranceListPage',
+            component: EntranceListPage,
+        },
+        { // 选科
+            path: '/entrance/specialty',
+            name: 'SpecialtyListPage',
+            component: SpecialtyListPage,
+        },
+        { //自主招生
+            path: '/recruit/list',
+            name: 'RecruitListPage',
+            component: RecruitListPage
+        },
+        { //社区
+            path: '/community/info',
+            name: 'CommunityInfoPage',
+            component: CommunityInfoPage
         }
+        ]
+    },
+    {
+        path: '/platform',
+        name: 'PlatformPage',
+        component: PlatformPage,
+        children: [{
+            path: '/',
+            name: 'WelcomePage',
+            component: WelcomePage
+        },
+        {
+            path: 'release',
+            name: 'ReleasePage',
+            component: ReleasePage
+        }
+        ]
+    },
+    {
+        path: '/login',
+        name: 'LoginPage',
+        component: LoginPage
+    },
+    {
+        path: '/register',
+        name: 'RegisterPage',
+        component: RegisterPage
+    },
+    {
+        path: '*',
+        name: 'NotFindePage',
+        component: NotFindePage
+    },
+    { //动态路由
+        path: '/list/:listid',
+        name: 'list',
+        component: list
+    }
     ]
 })
