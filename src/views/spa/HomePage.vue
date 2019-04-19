@@ -6,8 +6,8 @@
           <title-component title="牛人介绍"></title-component>
         </div>
         <div class="home-introduce-body color-white">
-          <el-row>
-            <el-col :span="5">
+          <el-row :gutter="40">
+            <el-col :span="4">
               <div class="grid-content bg-purple">
                 <div class="home-one-img-box">
                   <img src="@/assets/img/img1.png" class="home-one-img">
@@ -15,7 +15,7 @@
                 <a href="/" class="home-lx-a">联系他</a>
               </div>
             </el-col>
-            <el-col :span="19">
+            <el-col :span="20">
               <div class="grid-content bg-purple-light">
                 <div class="home-introduce-title-box clearfix">
                   <h1 class="home-introduce-title">江博士</h1>

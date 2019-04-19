@@ -53,21 +53,44 @@
   width: 70%;
 }
 
-.head-nav a {
+.head-nav a.nav-first {
   float: left;
   color: #fff;
   line-height: 50px;
-  padding: 0 10px;
   font-size: 16px;
   color: #000;
   border-bottom: solid 5px #fff;
-  margin: 0 15px;
-  width: 65px;
+  width: 100%;
   text-align: center;
 }
 
-.head-nav a.active {
+.head-nav a.active.nav-first {
   border-bottom: solid 5px #e6602d;
+}
+
+.nav {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background: #e6602d;
+  width: 100%;
+  z-index: 1;
+  padding: 15px 0;
+  display: none;
+}
+
+.nav a {
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.nav a.active {
+  color: yellow;
 }
 
 .head-contain {
@@ -75,6 +98,12 @@
   padding: 25px 0 20px;
   height: 70px;
 }
+
+.head-nav .grid-content {
+  position: relative;
+}
+
+
 
 /* 底部 */
 .foot-box {
@@ -270,14 +299,13 @@
 }
 
 .home-aside-list li {
-  height: 340px;
+  padding-bottom: 15px;
   background-color: #fff;
   margin-bottom: 25px;
 }
 
 .home-aside-list-img {
-  width: 230px;
-  height: 255px;
+  width: 100%;
 }
 
 .home-aside-list li h3 {

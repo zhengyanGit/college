@@ -5,11 +5,11 @@
 </template>
 
 <script>
-import schollComponent from "../_components/scholl-component.vue";
+import schoolComponent from "../_components/school-component.vue";
 export default {
   name: "SchoolIndexPage",
   components: {
-    schollComponent
+    schoolComponent
   }
 };
 </script>

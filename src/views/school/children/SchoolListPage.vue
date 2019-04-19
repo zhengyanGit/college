@@ -2,20 +2,7 @@
   <div class="bfb80 scholl-list-body">
     <div class="school-list-filter-box">
       <div class="school-list-seach-box">
-        <scholl-search-component :data="seachData" title="院校查询"></scholl-search-component>
-        <!-- <div class="school-list-seach">
-          <h2 class="school-list-seach-title">院校查询</h2>
-          <div class="school-list-seach-bfb70">
-            <el-input placeholder="院校名称" v-model="schollName" class="shool-list-seach-input">
-              <el-button
-                slot="append"
-                icon="el-icon-search"
-                type="primary"
-                class="school-list-seach-btn"
-              >搜 索</el-button>
-            </el-input>
-          </div>
-        </div>-->
+        <scholl-search-component :data="seachData"></scholl-search-component>
       </div>
       <ul class="school-list-filter-body">
         <li class="clearfix">
@@ -100,6 +87,7 @@
         <span class="school-list-result-color">127</span>所院校
       </p>
     </div>
+
     <div class="school-list-tab">
       <template>
         <el-table
@@ -112,7 +100,10 @@
         >
           <el-table-column align="center" label="院校名称">
             <template slot-scope="scope">
-              <a href="#" class="school-list-tab-name">{{scope.row.name}}</a>
+              <router-link
+                class="school-list-tab-name"
+                :to="{ path: '/school/details/123'}"
+              >{{scope.row.name}}</router-link>
             </template>
           </el-table-column>
           <el-table-column align="center" prop="feature" label="院校特色"></el-table-column>
@@ -143,7 +134,10 @@ export default {
   },
   data() {
     return {
-      schollName: "", //院校名称 搜索字段
+      seachData: {
+        title: "院校查询",
+        placeholder: "院校名称"
+      },
       tags: [
         //条件标签
         { name: "标签一", type: "" },

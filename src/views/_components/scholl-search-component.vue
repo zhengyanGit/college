@@ -1,8 +1,8 @@
 <template>
   <div class="school-list-seach">
-    <h2 class="school-list-seach-title" v-text="title"></h2>
+    <h2 class="school-list-seach-title" v-text="data.title"></h2>
     <div class="school-list-seach-bfb70">
-      <el-input placeholder="院校名称" v-model="schollName" class="shool-list-seach-input">
+      <el-input :placeholder="data.placeholder" v-model="schollName" class="shool-list-seach-input">
         <el-button
           slot="append"
           icon="el-icon-search"
@@ -17,7 +17,12 @@
 <script>
 export default {
   name: "scholl-search-component",
-  props: ["title", "data"]
+  props: ["data"],
+  data() {
+    return {
+      schollName: ""
+    };
+  }
 };
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->

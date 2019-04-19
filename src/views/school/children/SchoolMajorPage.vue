@@ -2,7 +2,7 @@
   <div class="bfb80 scholl-list-body">
     <div class="school-major-box">
       <div class="school-list-seach-box">
-        <scholl-search-component :data="seachData" title="院校查询"></scholl-search-component>
+        <scholl-search-component :data="seachData"></scholl-search-component>
       </div>
       <p class="school-major-info">
         2012教育部公布了最新的《普通高等学校专业目录（2012年）》，对1998年原《普通高等学校本科专业目录》进行了调整。《普通高等学校专业目录（2012年）》分为基本专业
@@ -127,7 +127,8 @@ export default {
       schollName: "", //院校名称 搜索字段
       tabIndex: 0, // tab 索引
       seachData: {
-        title: "院校查询2"
+        title: "院校查询",
+        placeholder: "院校名称"
       }
     };
   },

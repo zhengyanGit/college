@@ -26,47 +26,84 @@
       </div>
       <div class="head-nav">
         <el-row>
-          <el-col :span="3">
-            <div class="grid-content bg-purple"></div>
-          </el-col>
-          <el-col :span="3">
-            <div class="grid-content bg-purple">
-              <router-link active-class="active" :to="{ path: '/' }" exact>首页</router-link>
+          <el-col class="head-mousemove" :span="3">
+            <div class="grid-content">
+              <router-link active-class="active" class="nav-first" :to="{ path: '/' }" exact>首页</router-link>
             </div>
           </el-col>
-          <el-col :span="3">
-            <div class="grid-content bg-purple">
-              <router-link active-class="active" :to="{ path: '/school'}">高招数据</router-link>
+          <el-col class="head-mousemove" :span="3">
+            <div class="grid-content">
+              <router-link active-class="active" class="nav-first" :to="{ path: '/school'}">高招数据</router-link>
+              <ul class="nav">
+                <li>
+                  <router-link active-class="active" :to="{ path: '/school/list'}">院校名录</router-link>
+                </li>
+                <li>
+                  <router-link active-class="active" :to="{ path: '/school/major'}">专业介绍</router-link>
+                </li>
+                <li>
+                  <router-link active-class="active" :to="{ path: '/school/segment'}">批次线查询</router-link>
+                </li>
+                <li>
+                  <router-link active-class="active" :to="{ path: '/school/score'}">院校分数查询</router-link>
+                </li>
+                <li>
+                  <router-link active-class="active" :to="{ path: '/school/batch'}">一分一段查询</router-link>
+                </li>
+              </ul>
             </div>
           </el-col>
-          <el-col :span="3">
-            <div class="grid-content bg-purple">
-              <router-link active-class="active" :to="{ path: '/reported/list'}">志愿填报</router-link>
+          <el-col class="head-mousemove" :span="3">
+            <div class="grid-content">
+              <router-link
+                active-class="active"
+                class="nav-first"
+                :to="{ path: '/reported/list'}"
+              >志愿填报</router-link>
             </div>
           </el-col>
-          <el-col :span="3">
-            <div class="grid-content bg-purple">
-              <router-link active-class="active" :to="{ path: '/appraisal'}">专业测评</router-link>
+          <el-col class="head-mousemove" :span="3">
+            <div class="grid-content">
+              <router-link active-class="active" class="nav-first" :to="{ path: '/appraisal'}">专业测评</router-link>
             </div>
           </el-col>
-          <el-col :span="3">
-            <div class="grid-content bg-purple">
-              <router-link active-class="active" :to="{ path: '/entrance'}">新高考</router-link>
+          <el-col class="head-mousemove" :span="3">
+            <div class="grid-content">
+              <router-link active-class="active" class="nav-first" :to="{ path: '/entrance'}">新高考</router-link>
             </div>
           </el-col>
-          <el-col :span="3">
-            <div class="grid-content bg-purple">
-              <router-link active-class="active" :to="{ path: '/recruit/list'}">自主招生</router-link>
+          <el-col class="head-mousemove" :span="3">
+            <div class="grid-content">
+              <router-link active-class="active" class="nav-first" :to="{ path: '/recruit'}">自主招生</router-link>
+              <ul class="nav">
+                <li>
+                  <router-link active-class="active" :to="{ path: '/recruit/lsit'}">专业介绍</router-link>
+                </li>
+                <li>
+                  <router-link active-class="active" :to="{ path: '/recruit/oneself'}">自招数据查询</router-link>
+                </li>
+                <li>
+                  <router-link active-class="active" :to="{ path: '/recruit/student'}">自主招生1对1</router-link>
+                </li>
+              </ul>
             </div>
           </el-col>
-          <el-col :span="3">
-            <div class="grid-content bg-purple">
-              <router-link active-class="active" :to="{ path: '/community/info'}">家长招生</router-link>
+          <el-col class="head-mousemove" :span="3">
+            <div class="grid-content">
+              <router-link
+                active-class="active"
+                class="nav-first"
+                :to="{ path: '/community/info'}"
+              >家长招生</router-link>
             </div>
           </el-col>
-          <el-col :span="3">
-            <div class="grid-content bg-purple">
-              <router-link active-class="active" :to="{ path: '/school/details/123'}">院校详情</router-link>
+          <el-col class="head-mousemove" :span="3">
+            <div class="grid-content">
+              <router-link
+                active-class="active"
+                class="nav-first"
+                :to="{ path: '/school/details/123'}"
+              >院校详情</router-link>
             </div>
           </el-col>
         </el-row>
@@ -81,7 +118,45 @@ export default {
     show3: true
   }),
   mounted: function() {
-    console.log($(".head-nav>a").length);
+    /* 简易导航 */
+
+    $(".head-mousemove").mousemove(function() {
+      $(this)
+        .find("ul")
+        .slideDown();
+    });
+    $(".head-mousemove").mouseleave(function() {
+      $(this)
+        .find("ul")
+        .stop(1, 1)
+        .slideUp();
+    });
+
+    /* var timer = null;
+    $(".nav-first").hover(
+      function() {
+        $(this)
+          .next()
+          .slideDown();
+      },
+      function() {
+        console.log("zoule");
+        timer = setTimeout(function() {
+          console.log("zoule-123");
+          $(this)
+            .next()
+            .slideUp();
+        }, 500);
+      }
+    );
+    $(".nav").hover(
+      function() {
+        clearTimeout(timer);
+      },
+      function() {
+        $(this).slideUp();
+      }
+    ); */
   }
 };
 </script>
