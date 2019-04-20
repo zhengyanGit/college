@@ -1,10 +1,10 @@
 <template>
-  <div class="bfb80">批次线查询</div>
+  <div class="bfb80">一分一段查询</div>
 </template>
 
 <script>
 export default {
-  name: "SchoolBatchPage",
+  name: "SchoolSegmentPage",
   data() {
     return {
       msg: "Welcome to Your Vue.js App"

@@ -42,13 +42,13 @@
                   <router-link active-class="active" :to="{ path: '/school/major'}">专业介绍</router-link>
                 </li>
                 <li>
-                  <router-link active-class="active" :to="{ path: '/school/segment'}">批次线查询</router-link>
+                  <router-link active-class="active" :to="{ path: '/school/segment'}">一分一段查询</router-link>
                 </li>
                 <li>
                   <router-link active-class="active" :to="{ path: '/school/score'}">院校分数查询</router-link>
                 </li>
                 <li>
-                  <router-link active-class="active" :to="{ path: '/school/batch'}">一分一段查询</router-link>
+                  <router-link active-class="active" :to="{ path: '/school/batch'}">批次线查询</router-link>
                 </li>
               </ul>
             </div>

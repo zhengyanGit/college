@@ -5,41 +5,38 @@
         <div class="home-introduce-head">
           <title-component title="牛人介绍"></title-component>
         </div>
-        <div class="home-introduce-body color-white">
-          <el-row :gutter="40">
-            <el-col :span="4">
-              <div class="grid-content bg-purple">
-                <div class="home-one-img-box">
-                  <img src="@/assets/img/img1.png" class="home-one-img">
-                </div>
-                <a href="/" class="home-lx-a">联系他</a>
-              </div>
-            </el-col>
-            <el-col :span="20">
-              <div class="grid-content bg-purple-light">
-                <div class="home-introduce-title-box clearfix">
-                  <h1 class="home-introduce-title">江博士</h1>
-                  <p class="home-introduce-info">
-                    <i class="iconfont icondizhi_"></i>首席专家
-                  </p>
-                </div>
-                <p class="home-introduce-details">
-                  <span class="home-introduce-weith">擅长领域：</span>高考志愿填报指导、中学生生涯规划
-                </p>
-                <div class="home-introduce-message">
-                  <p class="home-introduce-message-p">
-                    <span class="home-introduce-weith">背景简介：</span>中国地质大学教授、博士、全国著名高考专家，教育专家，高级咨询师，从事高考志愿填报指导工作多年。对湖北、湖南、河南、山东的高考志愿填报、自主招生综合评价升学等方面有多年的实际指导经验。
-                  </p>
-                  <p class="home-introduce-message-p">
-                    <span class="home-introduce-weith">指导年限：</span>10年
-                  </p>
-                  <p class="home-introduce-message-p">
-                    <span class="home-introduce-weith">服务区域：</span>湖北省、湖南省、河南省等
-                  </p>
-                </div>
-              </div>
-            </el-col>
-          </el-row>
+        <div class="home-introduce-body color-white clearfix">
+
+
+        <div class="grid-content bg-purple home-one-img-box-left">
+          <div class="home-one-img-box">
+            <img src="@/assets/img/img1.png" class="home-one-img">
+          </div>
+          <a href="/" class="home-lx-a">联系他</a>
+        </div>
+        <div class="grid-content bg-purple-light home-two-right">
+          <div class="home-introduce-title-box clearfix">
+            <h1 class="home-introduce-title">江博士</h1>
+            <p class="home-introduce-info">
+              <i class="iconfont icondizhi_"></i>首席专家
+            </p>
+          </div>
+          <p class="home-introduce-details">
+            <span class="home-introduce-weith">擅长领域：</span>高考志愿填报指导、中学生生涯规划
+          </p>
+          <div class="home-introduce-message">
+            <p class="home-introduce-message-p">
+              <span class="home-introduce-weith">背景简介：</span>中国地质大学教授、博士、全国著名高考专家，教育专家，高级咨询师，从事高考志愿填报指导工作多年。对湖北、湖南、河南、山东的高考志愿填报、自主招生综合评价升学等方面有多年的实际指导经验。
+            </p>
+            <p class="home-introduce-message-p">
+              <span class="home-introduce-weith">指导年限：</span>10年
+            </p>
+            <p class="home-introduce-message-p">
+              <span class="home-introduce-weith">服务区域：</span>湖北省、湖南省、河南省等
+            </p>
+          </div>
+        </div>
+         
         </div>
       </div>
       <div class="home-list">

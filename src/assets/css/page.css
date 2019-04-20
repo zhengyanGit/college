@@ -1,557 +1,569 @@
 /* 头部 */
+
 .head-box {
-  width: 100%;
+    width: 100%;
 }
 
 .head-top-bg {
-  height: 33px;
-  width: 100%;
-  background-color: #f0f0f0;
+    height: 33px;
+    width: 100%;
+    background-color: #f0f0f0;
 }
 
 .head-left {
-  float: left;
+    float: left;
 }
 
 .head-p-info {
-  margin-left: 5px;
-  width: 208px;
-  text-indent: 25px;
-  font-size: 12px;
-  color: #fff;
-  background: url('../img/top-info.png') 0px center no-repeat;
+    margin-left: 5px;
+    width: 208px;
+    text-indent: 25px;
+    font-size: 12px;
+    color: #fff;
+    background: url('../img/top-info.png') 0px center no-repeat;
 }
 
 .head-title-1 {
-  font-size: 14px;
-  color: #da6339;
+    font-size: 14px;
+    color: #da6339;
 }
 
 .head-p-left {
-  float: left;
+    float: left;
 }
 
 .head-a {
-  color: #34a9f6;
+    color: #34a9f6;
 }
 
 .head-right {
-  float: right;
+    float: right;
 }
 
 .head-top {
-  margin: 0 auto;
-  line-height: 33px;
+    margin: 0 auto;
+    line-height: 33px;
 }
 
 .log-img {
-  float: left;
+    float: left;
 }
 
 .head-nav {
-  float: right;
-  width: 70%;
+    float: right;
+    width: 70%;
 }
 
 .head-nav a.nav-first {
-  float: left;
-  color: #fff;
-  line-height: 50px;
-  font-size: 16px;
-  color: #000;
-  border-bottom: solid 5px #fff;
-  width: 100%;
-  text-align: center;
+    float: left;
+    color: #fff;
+    line-height: 50px;
+    font-size: 16px;
+    color: #000;
+    border-bottom: solid 5px #fff;
+    width: 100%;
+    text-align: center;
 }
 
 .head-nav a.active.nav-first {
-  border-bottom: solid 5px #e6602d;
+    border-bottom: solid 5px #e6602d;
 }
 
 .nav {
-  position: absolute;
-  top: 50px;
-  left: 0;
-  background: #e6602d;
-  width: 100%;
-  z-index: 1;
-  padding: 15px 0;
-  display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #e6602d;
+    width: 100%;
+    z-index: 1;
+    padding: 15px 0;
+    display: none;
 }
 
 .nav a {
-  height: 35px;
-  line-height: 35px;
-  color: #fff;
-  line-height: 30px;
-  text-align: center;
-  display: block;
-  width: 100%;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    width: 100%;
 }
 
 .nav a.active {
-  color: yellow;
+    color: yellow;
 }
 
 .head-contain {
-  margin: 0 auto;
-  padding: 25px 0 20px;
-  height: 70px;
+    margin: 0 auto;
+    padding: 25px 0 20px;
+    height: 70px;
 }
 
 .head-nav .grid-content {
-  position: relative;
+    position: relative;
 }
-
 
 
 /* 底部 */
+
 .foot-box {
-  width: 100%;
-  background-color: #1f6fb5;
+    width: 100%;
+    background-color: #1f6fb5;
 }
 
 .foot-link-bg {
-  height: 155px;
-  padding-top: 30px;
-  border-top: 2px solid #f0f0f0;
-  width: 100%;
-  background-color: #f2f2f2;
+    height: 155px;
+    padding-top: 30px;
+    border-top: 2px solid #f0f0f0;
+    width: 100%;
+    background-color: #f2f2f2;
 }
 
 .foot-info-bg {
-  width: 100%;
-  height: 145px;
-  background-color: #666666;
-  padding-top: 15px;
+    width: 100%;
+    height: 145px;
+    background-color: #666666;
+    padding-top: 15px;
 }
 
 .foot-link-list {
-  float: left;
-  width: 50%;
+    float: left;
+    width: 50%;
 }
 
 .foot-link-list li {
-  font-weight: bold;
-  color: #191919;
-  line-height: 30px;
-  padding-left: 25%;
+    font-weight: bold;
+    color: #191919;
+    line-height: 30px;
+    padding-left: 25%;
 }
 
 .foot-link-list li a,
 .foot-link-time p {
-  color: #666;
-  font-weight: normal;
+    color: #666;
+    font-weight: normal;
 }
 
 .foot-link-time {
-  padding-left: 25%;
+    padding-left: 25%;
 }
 
 .foot-link-time h3 {
-  font: 14px;
-  font-weight: bold;
-  color: #191919;
-  line-height: 30px;
+    font: 14px;
+    font-weight: bold;
+    color: #191919;
+    line-height: 30px;
 }
 
 .foot-link-img {
-  width: 50%;
-  float: left;
+    width: 50%;
+    float: left;
 }
 
 .foot-link-img-item {
-  width: 101px;
-  height: 101px;
+    width: 101px;
+    height: 101px;
 }
 
 .foot-wechat-color {
-  color: #04bb12;
+    color: #04bb12;
 }
 
 .foot-wechat-color2 {
-  color: #7789db
+    color: #7789db
 }
 
 .foot-info-p {
-  color: #fff;
-  text-align: center;
-  line-height: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
 }
 
 .foot-info-top {
-  padding-top: 38px;
+    padding-top: 38px;
 }
 
+
 /* 首页页面 */
+
 .home-box {
-  padding-bottom: 75px;
+    padding-bottom: 75px;
 }
 
 .home-main {
-  width: 80%;
-  float: left;
+    width: 80%;
+    float: left;
 }
 
 .home-aside {
-  width: 20%;
-  float: left;
+    width: 20%;
+    float: left;
 }
 
 .home-introduce-body {
-  padding: 40px;
+    padding: 40px;
+}
+
+.home-one-img-box-left {
+    width: 158px;
+    float: left;
 }
 
 .home-one-img-box {
-  width: 158px;
-  height: 158px;
-  border-radius: 79px;
-  background: #04bb12;
-  margin: 0 auto;
+    width: 158px;
+    height: 158px;
+    border-radius: 79px;
+    background: #04bb12;
+}
+
+.home-two-right {
+    width: 75%;
+    float: right;
 }
 
 .home-lx-a {
-  height: 40px;
-  line-height: 40px;
-  width: 140px;
-  text-align: center;
-  font-size: 16px;
-  color: #fff;
-  background-color: #3293f7;
-  display: block;
-  border-radius: 20px;
-  margin-top: 25px;
-  margin: 25px auto 0;
+    height: 40px;
+    line-height: 40px;
+    width: 140px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3293f7;
+    display: block;
+    border-radius: 20px;
+    margin-top: 25px;
+    margin: 25px auto 0;
 }
 
 .home-list-box {
-  background-color: #fff;
-  padding: 10px 40px 60px 30px;
+    background-color: #fff;
+    padding: 10px 40px 60px 30px;
 }
 
 .home-introduce-title {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  float: left;
-  margin-right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    float: left;
+    margin-right: 20px;
 }
 
 .home-introduce-info {
-  float: left;
-  height: 32px;
-  line-height: 32px;
-  text-align: center;
-  color: #fff;
-  background: url('../img/btn-bg.png') repeat-x;
-  border-radius: 16px;
-  padding: 0 20px;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    background: url('../img/btn-bg.png') repeat-x;
+    border-radius: 16px;
+    padding: 0 20px;
 }
 
 .home-introduce-details {
-  font-size: 20px;
-  color: #666;
-  padding: 20px 0;
+    font-size: 20px;
+    color: #666;
+    padding: 20px 0;
 }
 
 .home-introduce-message {
-  border-top: solid 1px #f0f0f0;
-  padding-top: 15px;
+    border-top: solid 1px #f0f0f0;
+    padding-top: 15px;
 }
 
 .home-introduce-message-p {
-  font-size: 16px;
-  color: #666;
-  line-height: 35px;
+    font-size: 16px;
+    color: #666;
+    line-height: 35px;
 }
 
 .home-introduce-weith {
-  color: #000;
+    color: #000;
 }
 
 .home-list-ul li {
-  padding-left: 25px;
-  background: url("../img/home-yuan.png") 0px 27px no-repeat;
+    padding-left: 25px;
+    background: url("../img/home-yuan.png") 0px 27px no-repeat;
 }
 
 .home-list-ul h3 {
-  font-size: 18px;
-  color: #333;
-  padding: 20px 0;
+    font-size: 18px;
+    color: #333;
+    padding: 20px 0;
 }
 
 .home-list-ul h3 span {
-  float: right;
-  color: #999;
-  font-size: 16px;
+    float: right;
+    color: #999;
+    font-size: 16px;
 }
 
 .home-list-ul p {
-  font-size: 16px;
-  color: #666;
-  border-bottom: solid 1px #e5e5e5;
-  line-height: 35px;
-  padding-bottom: 15px;
+    font-size: 16px;
+    color: #666;
+    border-bottom: solid 1px #e5e5e5;
+    line-height: 35px;
+    padding-bottom: 15px;
 }
 
 .home-aside-box {
-  padding-left: 15px;
+    padding-left: 15px;
 }
 
 .home-aside-list li {
-  padding-bottom: 15px;
-  background-color: #fff;
-  margin-bottom: 25px;
+    padding-bottom: 15px;
+    background-color: #fff;
+    margin-bottom: 25px;
 }
 
 .home-aside-list-img {
-  width: 100%;
+    width: 100%;
 }
 
 .home-aside-list li h3 {
-  font-size: 18px;
-  color: #000;
-  padding-left: 10px;
-  line-height: 25px;
-  padding-top: 20px;
+    font-size: 18px;
+    color: #000;
+    padding-left: 10px;
+    line-height: 25px;
+    padding-top: 20px;
 }
 
 .home-aside-list li p {
-  font-size: 14px;
-  color: #666;
-  padding-left: 10px;
-  line-height: 25px;
+    font-size: 14px;
+    color: #666;
+    padding-left: 10px;
+    line-height: 25px;
 }
-
 
 
 /* 注册页面 */
+
 .reg-bg {
-  background: #fff url('../img/reg-bg.png') repeat-x;
-  height: 100%;
+    background: #fff url('../img/reg-bg.png') repeat-x;
+    height: 100%;
 }
 
 .reg-ruleForm {
-  padding: 0 25%;
+    padding: 0 25%;
 }
 
 
 /* 学校名录 */
+
 .school-list-filter-box {
-  margin-top: 35px;
-  height: 410px;
-  border: solid 1px #e5e5e5;
-  background-color: #fff;
+    margin-top: 35px;
+    height: 410px;
+    border: solid 1px #e5e5e5;
+    background-color: #fff;
 }
 
 .school-list-seach-box {
-  height: 90px;
-  background-color: #eeeeee;
+    height: 90px;
+    background-color: #eeeeee;
 }
 
-
-
 .school-list-filter-body {
-  padding: 0 15px;
+    padding: 0 15px;
 }
 
 .school-list-filter-body li {
-  border-bottom: dotted 1px #e5e5e5;
-  padding: 10px 0;
-  position: relative;
+    border-bottom: dotted 1px #e5e5e5;
+    padding: 10px 0;
+    position: relative;
 }
 
 .school-list-filter-body li.active {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 .school-list-filter-body li span {
-  position: absolute;
-  right: 20px;
-  top: 17px;
-  color: #3293f7;
-  cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 17px;
+    color: #3293f7;
+    cursor: pointer;
 }
 
 .school-list-filter-title {
-  float: left;
-  font-size: 16px;
-  line-height: 35px;
-  height: 35px;
+    float: left;
+    font-size: 16px;
+    line-height: 35px;
+    height: 35px;
 }
 
 .school-list-filter-line {
-  float: left;
-  width: 85%;
-  margin-right: 50px;
+    float: left;
+    width: 85%;
+    margin-right: 50px;
 }
 
 .school-list-filter-line a {
-  padding-left: 35px;
-  line-height: 35px;
-  height: 35px;
-  float: left;
-  display: block;
+    padding-left: 35px;
+    line-height: 35px;
+    height: 35px;
+    float: left;
+    display: block;
 }
 
 .school-list-result {
-  margin: 25px 0 10px 0;
-  line-height: 32px;
+    margin: 25px 0 10px 0;
+    line-height: 32px;
 }
 
 .school-list-result p {
-  float: left;
+    float: left;
 }
 
 .school-list-result-clear {
-  float: left;
-  margin: 0 25px 0 23px;
+    float: left;
+    margin: 0 25px 0 23px;
 }
 
 .school-list-result-color {
-  color: #3293f7;
+    color: #3293f7;
 }
 
 .school-list-result-box {
-  float: left;
+    float: left;
 }
 
 .school-list-result-item {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
 .school-list-tab {
-  border: 1px solid #EBEEF5;
-  background-color: #fff;
+    border: 1px solid #EBEEF5;
+    background-color: #fff;
 }
 
 .school-list-tab-name {
-  color: #3293f7;
+    color: #3293f7;
 }
 
 .list-page-box {
-  height: 60px;
-  text-align: right;
-  margin-top: 25px;
-  margin-right: 20px;
+    height: 60px;
+    text-align: right;
+    margin-top: 25px;
+    margin-right: 20px;
 }
 
 .school-list-tab-line {
-  height: 75px;
-  border: none;
+    height: 75px;
+    border: none;
 }
 
 .school-list-tab-head {
-  background-color: #e5e5e5 !important;
-  height: 50px;
-  color: #222;
+    background-color: #e5e5e5 !important;
+    height: 50px;
+    color: #222;
 }
 
 .scholl-list-body {
-  padding-bottom: 70px;
+    padding-bottom: 70px;
 }
 
 
 /* 专业介绍 */
+
 .school-major-box {
-  height: 180px;
-  margin-top: 35px;
-  border: solid 1px #e5e5e5;
-  background-color: #fff;
+    height: 180px;
+    margin-top: 35px;
+    border: solid 1px #e5e5e5;
+    background-color: #fff;
 }
 
 .school-major-info {
-  color: #b4b4b4;
-  padding: 22px 25px 0 25px;
-  text-indent: 2em;
+    color: #b4b4b4;
+    padding: 22px 25px 0 25px;
+    text-indent: 2em;
 }
 
 .school-major-tab {
-  margin-top: 25px;
+    margin-top: 25px;
 }
 
 .school-major-tab-head {
-  border: solid 1px #e5e5e5;
-  border-bottom: none;
-  width: 320px;
+    border: solid 1px #e5e5e5;
+    border-bottom: none;
+    width: 320px;
 }
 
 .school-major-tab-head li {
-  height: 45px;
-  line-height: 45px;
-  width: 160px;
-  text-align: center;
-  font-size: 16px;
-  float: left;
-  background-color: #fff;
-  cursor: pointer;
+    height: 45px;
+    line-height: 45px;
+    width: 160px;
+    text-align: center;
+    font-size: 16px;
+    float: left;
+    background-color: #fff;
+    cursor: pointer;
 }
 
 .school-major-tab-head li.active {
-  color: #fff;
-  background-color: #3293f7;
+    color: #fff;
+    background-color: #3293f7;
 }
 
 .school-major-tab-body {
-  border: solid 1px #e5e5e5;
-  border-top: solid 1px #3293f7;
-  background-color: #fff;
+    border: solid 1px #e5e5e5;
+    border-top: solid 1px #3293f7;
+    background-color: #fff;
 }
 
 .school-major-lead {
-  height: 35px;
-  border-bottom: solid 1px #e5e5e5;
-  padding-top: 10px;
+    height: 35px;
+    border-bottom: solid 1px #e5e5e5;
+    padding-top: 10px;
 }
 
 .school-major-lead .grid-content {
-  text-align: center;
-  height: 26px;
-  line-height: 26px;
-  border-right: solid 1px #e5e5e5;
+    text-align: center;
+    height: 26px;
+    line-height: 26px;
+    border-right: solid 1px #e5e5e5;
 }
 
 .school-major-lead .active {
-  border-right: none;
+    border-right: none;
 }
 
 .school-major-tree {
-  padding: 15px;
+    padding: 15px;
 }
 
 .school-major-tree-one {
-  height: 20px;
-  line-height: 20px;
-  border-left: solid #3494f6 5px;
-  padding-left: 10px;
+    height: 20px;
+    line-height: 20px;
+    border-left: solid #3494f6 5px;
+    padding-left: 10px;
 }
 
 .school-major-tree-one h3 {
-  float: left;
-  font-size: 16px;
+    float: left;
+    font-size: 16px;
 }
 
 .school-major-tree-one p {
-  margin-left: 12px;
-  float: left;
-  height: 20px;
-  padding: 0 30px 0 50px;
-  color: #fff;
-  background: #6bb1f9 url(../img/jiantou-blue.jpg) left no-repeat;
+    margin-left: 12px;
+    float: left;
+    height: 20px;
+    padding: 0 30px 0 50px;
+    color: #fff;
+    background: #6bb1f9 url(../img/jiantou-blue.jpg) left no-repeat;
 }
 
 .school-major-tree-two {
-  height: 30px;
-  line-height: 30px;
-  background-color: #f9f9f9;
-  padding-left: 20px;
-  margin-top: 15px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #f9f9f9;
+    padding-left: 20px;
+    margin-top: 15px;
 }
 
 .school-major-tree-three {
-  padding: 10px 15px;
+    padding: 10px 15px;
 }
 
 .school-major-tree-three a {
-  line-height: 27px;
+    line-height: 27px;
 }
