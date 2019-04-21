@@ -60,7 +60,6 @@
     line-height: 50px;
     font-size: 16px;
     color: #000;
-    border-bottom: solid 5px #fff;
     width: 100%;
     text-align: center;
 }
@@ -566,4 +565,158 @@
 
 .school-major-tree-three a {
     line-height: 27px;
+}
+
+
+/* 录取数据 */
+
+.school-dts-enroll {
+    background-color: #fff;
+}
+
+.school-dts-enroll-tab {
+    border-left: solid 1px #dbdbdb;
+}
+
+.school-dts-enroll-tab li {
+    width: 165px;
+    text-align: center;
+    cursor: pointer;
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    float: left;
+    border-top: solid 1px #dbdbdb;
+    border-right: solid 1px #dbdbdb;
+}
+
+.school-dts-enroll-tab li.active {
+    color: #fff;
+    background: #3293f7;
+}
+
+.school-dts-enroll-body {
+    border-top: solid 1px #3293f7;
+    width: 100%;
+}
+
+.school-dts-enroll-filter li {
+    width: 25%;
+    float: left;
+}
+
+.school-dts-enroll-select {
+    float: left;
+}
+
+.school-dts-enroll-text-right {
+    text-align: right;
+    line-height: 40px;
+}
+
+.school-dts-enroll-filter-top {
+    padding-right: 5%;
+}
+
+.school-dts-enroll-btn {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.school-dts-enroll-table {
+    background-color: #fff;
+    padding: 0 3%;
+    margin-top: 35px;
+}
+
+.school-dts-enroll-tab-line {
+    height: 60px;
+    border: none;
+}
+
+.school-dts-enroll-tab-line>td {
+    border: none !important;
+}
+
+.school-dts-enroll-tab-head {
+    background-color: #e5e5e5 !important;
+    height: 50px;
+    color: #222;
+}
+
+
+/* 开设院校 */
+
+.school-dts-setting-hot {
+    background: #fff;
+}
+
+.school-dts-setting-search {
+    background: #fff;
+    margin-top: 25px;
+}
+
+.school-dts-setting-search-table {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 0 15px;
+}
+
+.school-dts-setting-hot-table-head {
+    height: 50px;
+    line-height: 50px;
+    background-color: #e5e5e5;
+    padding: 0 15px;
+}
+
+.school-dts-setting-hot-table-head-item {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.school-dts-setting-hot-table-tbody {
+    padding: 0 15px;
+}
+
+.school-dts-setting-hot-table-tbody-item {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-bottom: solid 1px #efefef;
+}
+
+.school-dts-setting-hot-table-tbody-item2 {
+    border-bottom: none;
+}
+
+
+/* 高招数据 - 牛人帮 */
+
+.school-dts-fierce-info {
+    background-color: #fff;
+    padding: 25px 40px 40px;
+}
+
+.school-dts-fierce-info-h1 {
+    font-size: 24px;
+}
+
+.school-dts-fierce-info-p {
+    line-height: 25px;
+    margin-top: 15px;
+    border-bottom: solid 1px #eee;
+    padding-bottom: 25px;
+}
+
+.school-dts-fierce-info-tag {
+    margin-top: 30px;
+}
+
+.school-dts-fierce-info-tag span {
+    border: solid 1px #ecbc98;
+    color: #ec8769;
+    padding: 5px 15px;
+    border-radius: 3px;
+    margin-right: 35px;
 }

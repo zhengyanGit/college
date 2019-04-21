@@ -3,16 +3,15 @@
     <school-component></school-component>
     <div class="bfb80 clearfix school-details">
       <div class="left-nav">
-        <router-link active-class="active" :to="{ path: '/school/details/123'}">院校介绍</router-link>
-        <router-link active-class="active" :to="{ path: '/school/details/123/faculty'}">院系设置</router-link>
-        <router-link active-class="active" :to="{ path: '/school/details/123/faculty'}">专业介绍</router-link>
-        <router-link active-class="active" :to="{ path: '/school/details/123/faculty'}">录取数据</router-link>
-        <router-link active-class="active" :to="{ path: '/school/details/123/faculty'}">招生章程</router-link>
-        <router-link active-class="active" :to="{ path: '/school/details/123/faculty'}">自主招生</router-link>
-        <router-link active-class="active" :to="{ path: '/school/details/123/faculty'}">牛人帮</router-link>
+        <router-link active-class="active" :to="{ path: `/school/details/${$route.params.detailId}/intro`}">院校介绍</router-link>
+        <router-link active-class="active" :to="{ path: `/school/details/${$route.params.detailId}/setting`}">院系设置</router-link>
+        <router-link active-class="active" :to="{ path: `/school/details/${$route.params.detailId}/major`}">专业介绍</router-link>
+        <router-link active-class="active" :to="{ path: `/school/details/${$route.params.detailId}/enroll`}">录取数据</router-link>
+        <router-link active-class="active" :to="{ path: `/school/details/${$route.params.detailId}/student`}">招生章程</router-link>
+        <router-link active-class="active" :to="{ path: `/school/details/${$route.params.detailId}/own`}">自主招生</router-link>
+        <router-link active-class="active" :to="{ path: `/school/details/${$route.params.detailId}/fierce`}">牛人帮</router-link>
       </div>
-      <div class="contain">
-        <div>学校名录详情{{$route.params.id}}</div>
+      <div class="school-contain">
         <router-view/>
       </div>
     </div>
@@ -38,12 +37,14 @@ export default {
 <style scoped>
 .school-details {
   margin-top: 30px;
+  padding-bottom:100px;
 }
 .left-nav {
-  width: 250px;
+  width: 20%;
   background-color: #fff;
   float: left;
-  margin-right: 18px;
+  margin-right: 2%;
+  padding-bottom:20px;
 }
 .left-nav a {
   display: block;
@@ -57,9 +58,8 @@ export default {
   background-color: #1782f1;
   color: #fff;
 }
-.contain {
-  width: 900px;
-  background-color: antiquewhite;
-  float: left;
+.school-contain {
+ float:left;
+ width:75%;
 }
 </style>
