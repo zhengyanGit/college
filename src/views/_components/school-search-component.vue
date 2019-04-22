@@ -2,7 +2,7 @@
   <div class="school-list-seach">
     <h2 class="school-list-seach-title" v-text="data.title"></h2>
     <div class="school-list-seach-bfb70">
-      <el-input :placeholder="data.placeholder" v-model="schollName" class="shool-list-seach-input">
+      <el-input :placeholder="data.placeholder" v-model="schoolName" class="shool-list-seach-input">
         <el-button
           slot="append"
           icon="el-icon-search"
@@ -16,11 +16,11 @@
 </template>
 <script>
 export default {
-  name: "scholl-search-component",
+  name: "school-search-component",
   props: ["data"],
   data() {
     return {
-      schollName: ""
+      schoolName: ""
     };
   }
 };

@@ -165,7 +165,7 @@
 <script>
 import titleComponent from "../../../_components/title-component.vue";
 export default {
-  name: "SchollDetailsEnrollPage",
+  name: "SchoolDetailsEnrollPage",
   components: {
     titleComponent
   },

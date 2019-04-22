@@ -20,16 +20,16 @@ import SchoolScorePage from '@/views/school/children/SchoolScorePage' //院校�
 import SchoolSegmentPage from '@/views/school/children/SchoolSegmentPage' //一分一段查询
 import SchoolBatchPage from '@/views/school/children/SchoolBatchPage' //批次线查询
 
-import SchollDetailsPage from '@/views/school/children/school-details/SchollDetailsPage' //院校详情架子
-import SchollDetailsIntroPage from '@/views/school/children/school-details/SchollDetailsIntroPage' // 院系简介
-import SchollDetailsSettingPage from '@/views/school/children/school-details/SchollDetailsSettingPage' //院系设置
-import SchollDetailsMajorPage from '@/views/school/children/school-details/SchollDetailsMajorPage' //专业介绍
-import SchollDetailsEnrollPage from '@/views/school/children/school-details/SchollDetailsEnrollPage' //录取数据
-import SchollDetailsStudentPage from '@/views/school/children/school-details/SchollDetailsStudentPage' //招生章程
-import SchollDetailsOwnPage from '@/views/school/children/school-details/SchollDetailsOwnPage' //自主招生
-import SchollDetailsFiercePage from '@/views/school/children/school-details/SchollDetailsFiercePage' //牛人帮
+import SchoolDetailsPage from '@/views/school/children/school-details/SchoolDetailsPage' //院校详情架子
+import SchoolDetailsIntroPage from '@/views/school/children/school-details/SchoolDetailsIntroPage' // 院系简介
+import SchoolDetailsSettingPage from '@/views/school/children/school-details/SchoolDetailsSettingPage' //院系设置
+import SchoolDetailsMajorPage from '@/views/school/children/school-details/SchoolDetailsMajorPage' //专业介绍
+import SchoolDetailsEnrollPage from '@/views/school/children/school-details/SchoolDetailsEnrollPage' //录取数据
+import SchoolDetailsStudentPage from '@/views/school/children/school-details/SchoolDetailsStudentPage' //招生章程
+import SchoolDetailsOwnPage from '@/views/school/children/school-details/SchoolDetailsOwnPage' //自主招生
+import SchoolDetailsFiercePage from '@/views/school/children/school-details/SchoolDetailsFiercePage' //牛人帮
 
-import SchollDetailsMajorIndexPage from '@/views/school/children/major/IndexPage' //专业介绍详情架子
+import SchoolDetailsMajorIndexPage from '@/views/school/children/major/IndexPage' //专业介绍详情架子
 import SchoolMajorInfoPage from '@/views/school/children/major/SchoolMajorInfoPage' //专业介绍-简介
 import SchoolMajorSettingPage from '@/views/school/children/major/SchoolMajorSettingPage' //专业介绍-开设院校
 import SchoolMajorFiercePage from '@/views/school/children/major/SchoolMajorFiercePage' //专业介绍-牛人帮
@@ -113,8 +113,8 @@ export default new Router({
         },
         {  // 高招数据-专业详情
             path: '/school/major/:detailId',
-            name: 'SchollDetailsMajorIndexPage',
-            component: SchollDetailsMajorIndexPage,
+            name: 'SchoolDetailsMajorIndexPage',
+            component: SchoolDetailsMajorIndexPage,
             children: [
                 { // 专业介绍
                     path: '',
@@ -142,40 +142,40 @@ export default new Router({
         },
         { // 高校数据-详情
             path: '/school/details/:detailId',
-            name: 'SchollDetailsPage',
-            component: SchollDetailsPage,
+            name: 'SchoolDetailsPage',
+            component: SchoolDetailsPage,
             children: [{ // 院校简介
                 path: '',
-                name: 'SchollDetailsIntroPage',
-                component: SchollDetailsIntroPage,
+                name: 'SchoolDetailsIntroPage',
+                component: SchoolDetailsIntroPage,
             }, { // 院校简介
                 path: 'intro',
-                name: 'SchollDetailsIntroPage',
-                component: SchollDetailsIntroPage,
+                name: 'SchoolDetailsIntroPage',
+                component: SchoolDetailsIntroPage,
             }, {
                 path: 'setting', //院系设置
-                name: 'SchollDetailsSettingPage',
-                component: SchollDetailsSettingPage,
+                name: 'SchoolDetailsSettingPage',
+                component: SchoolDetailsSettingPage,
             }, {
                 path: 'major', //专业介绍
-                name: 'SchollDetailsMajorPage',
-                component: SchollDetailsMajorPage,
+                name: 'SchoolDetailsMajorPage',
+                component: SchoolDetailsMajorPage,
             }, {
                 path: 'enroll', //录取数据
-                name: 'SchollDetailsEnrollPage',
-                component: SchollDetailsEnrollPage,
+                name: 'SchoolDetailsEnrollPage',
+                component: SchoolDetailsEnrollPage,
             }, {
                 path: 'student', //招生章程
-                name: 'SchollDetailsStudentPage',
-                component: SchollDetailsStudentPage,
+                name: 'SchoolDetailsStudentPage',
+                component: SchoolDetailsStudentPage,
             }, {
                 path: 'own', //自主招生
-                name: 'SchollDetailsOwnPage',
-                component: SchollDetailsOwnPage,
+                name: 'SchoolDetailsOwnPage',
+                component: SchoolDetailsOwnPage,
             }, {
                 path: 'fierce', //牛人帮
-                name: 'SchollDetailsFiercePage',
-                component: SchollDetailsFiercePage,
+                name: 'SchoolDetailsFiercePage',
+                component: SchoolDetailsFiercePage,
             }]
         },
         { // 志愿填报

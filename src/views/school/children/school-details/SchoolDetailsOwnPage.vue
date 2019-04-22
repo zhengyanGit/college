@@ -13,7 +13,7 @@ export default {
   components: {
     titleComponent
   },
-  name: "SchollDetailsOwnPage",
+  name: "SchoolDetailsOwnPage",
   data() {
     return {
       msg: "Welcome to Your Vue.js App"

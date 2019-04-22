@@ -1,28 +1,26 @@
 <template>
-  
-    <div class="school-head-bg">
-      <div class="bfb80">
-        <a href="#" class="scholl-collect">
-          <i class="iconfont iconshoucang mr5"></i>收藏
-        </a>
-        <div class="scholl-tag clearfix">
-          <h2 class="scholl-tag-title">北京大学</h2>
-          <span class="scholl-tag-item">双一流</span>
-          <span class="scholl-tag-item">双一流</span>
-          <span class="scholl-tag-item">双一流</span>
-          <span class="scholl-tag-item scholl-tag-item2">公办</span>
-        </div>
-        <div class="scholl-icon">
-          <img src="@/assets/img/icon1.png" class="scholl-icon-img">
-          <img src="@/assets/img/icon2.png" class="scholl-icon-img">
-        </div>
+  <div class="school-head-bg">
+    <div class="bfb80">
+      <a href="#" class="school-collect">
+        <i class="iconfont iconshoucang mr5"></i>收藏
+      </a>
+      <div class="school-tag clearfix">
+        <h2 class="school-tag-title">北京大学</h2>
+        <span class="school-tag-item">双一流</span>
+        <span class="school-tag-item">双一流</span>
+        <span class="school-tag-item">双一流</span>
+        <span class="school-tag-item school-tag-item2">公办</span>
+      </div>
+      <div class="school-icon">
+        <img src="@/assets/img/icon1.png" class="school-icon-img">
+        <img src="@/assets/img/icon2.png" class="school-icon-img">
       </div>
     </div>
-
+  </div>
 </template>
 <script>
 export default {
-  name: "scholl-component"
+  name: "school-component"
 };
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -32,16 +30,16 @@ export default {
   height: 240px;
   background: #52b8f5;
 }
-.scholl-tag {
+.school-tag {
   padding-top: 60px;
 }
-.scholl-tag-title {
+.school-tag-title {
   font-size: 20px;
   color: #fff;
   float: left;
   margin-right: 20px;
 }
-.scholl-tag-item {
+.school-tag-item {
   float: left;
   font-size: 14px;
   background-color: #ff7c2e;
@@ -50,19 +48,19 @@ export default {
   border-radius: 5px;
   margin-right: 5px;
 }
-.scholl-tag-item2 {
+.school-tag-item2 {
   background-color: #00a100;
 }
-.scholl-collect {
+.school-collect {
   font-size: 14px;
   color: #fff;
   float: right;
   padding: 20px 30px 0 0;
 }
-.scholl-icon {
+.school-icon {
   margin-top: 70px;
 }
-.scholl-icon-img {
+.school-icon-img {
   float: left;
   margin-right: 18px;
 }

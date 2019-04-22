@@ -23,7 +23,7 @@ export default {
   components: {
     titleComponent
   },
-  name: "SchollDetailsStudentPage",
+  name: "SchoolDetailsStudentPage",
   data() {
     return {
       msg: "Welcome to Your Vue.js App"

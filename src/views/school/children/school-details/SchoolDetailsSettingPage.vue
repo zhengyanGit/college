@@ -40,7 +40,7 @@ export default {
   components: {
     titleComponent
   },
-  name: "SchollDetailsSettingPage",
+  name: "SchoolDetailsSettingPage",
   data() {
     return {};
   },

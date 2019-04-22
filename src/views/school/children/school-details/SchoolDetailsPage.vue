@@ -5,15 +5,31 @@
       <div class="left-nav">
         <router-link
           active-class="active"
-          :to="{ path: `/school/major/${$route.params.detailId}/info`}"
-        >专业详情</router-link>
+          :to="{ path: `/school/details/${$route.params.detailId}/intro`}"
+        >院校介绍</router-link>
         <router-link
           active-class="active"
-          :to="{ path: `/school/major/${$route.params.detailId}/setting`}"
-        >开设院校</router-link>
+          :to="{ path: `/school/details/${$route.params.detailId}/setting`}"
+        >院系设置</router-link>
         <router-link
           active-class="active"
-          :to="{ path: `/school/major/${$route.params.detailId}/fierce`}"
+          :to="{ path: `/school/details/${$route.params.detailId}/major`}"
+        >专业介绍</router-link>
+        <router-link
+          active-class="active"
+          :to="{ path: `/school/details/${$route.params.detailId}/enroll`}"
+        >录取数据</router-link>
+        <router-link
+          active-class="active"
+          :to="{ path: `/school/details/${$route.params.detailId}/student`}"
+        >招生章程</router-link>
+        <router-link
+          active-class="active"
+          :to="{ path: `/school/details/${$route.params.detailId}/own`}"
+        >自主招生</router-link>
+        <router-link
+          active-class="active"
+          :to="{ path: `/school/details/${$route.params.detailId}/fierce`}"
         >牛人帮</router-link>
       </div>
       <div class="school-contain">

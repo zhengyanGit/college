@@ -1,8 +1,8 @@
 <template>
-  <div class="bfb80 scholl-list-body">
+  <div class="bfb80 school-list-body">
     <div class="school-list-filter-box">
       <div class="school-list-seach-box">
-        <scholl-search-component :data="seachData"></scholl-search-component>
+        <school-search-component :data="seachData"></school-search-component>
       </div>
       <ul class="school-list-filter-body">
         <li class="clearfix">
@@ -126,11 +126,11 @@
 
 
 <script>
-import SchollSearchComponent from "../../_components/scholl-search-component.vue";
+import SchoolSearchComponent from "../../_components/school-search-component.vue";
 export default {
   name: "SchoolListPage",
   components: {
-    SchollSearchComponent
+    SchoolSearchComponent
   },
   data() {
     return {

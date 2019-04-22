@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "SchollDetailsMajorPage",
+  name: "SchoolDetailsMajorPage",
   data() {
     return {
       msg: "Welcome to Your Vue.js App"

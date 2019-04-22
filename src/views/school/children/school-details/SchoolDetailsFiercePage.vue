@@ -9,7 +9,7 @@
         <a href="/" class="home-lx-a">联系他</a>
       </div>
       <div class="home-two-right">
-        <h1 class="school-dts-fierce-info-h1">张文文2</h1>
+        <h1 class="school-dts-fierce-info-h1">张文文</h1>
         <p
           class="school-dts-fierce-info-p"
         >阿士大夫撒打算打发士大夫撒地方撒地方去玩儿无群二无群二无情二七王而我却二千万而威尔而有人提供符合法定规划规范阿士大夫撒打算打发士大夫撒地方撒地方去玩儿无群二无群二无情二七王而我却二千万而威尔而有人提供符合法定规划规范</p>
