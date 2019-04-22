@@ -42,7 +42,10 @@ import ReportedSimulationPage from '@/views/reported/ReportedSimulationPage' //�
 
 
 //专业测评
-import AppraisalIndexPage from '@/views/appraisal/AppraisalIndexPage'
+import AppraisalIndexPage from '@/views/appraisal/AppraisalIndexPage' // 架子
+import AppraisalBuyPage from '@/views/appraisal/children/BuyPage' // 购买页
+import AppraisalTestStepPage from '@/views/appraisal/children/TestStep' // 测试步骤1
+import AppraisalTestStep2Page from '@/views/appraisal/children/TestStep2' // 测试步骤1
 
 //新高考 
 import EntranceListPage from '@/views/entrance/EntranceListPage' //政策解读
@@ -193,7 +196,28 @@ export default new Router({
         { // 专业测评
             path: '/appraisal',
             name: 'AppraisalIndexPage',
-            component: AppraisalIndexPage
+            component: AppraisalIndexPage,
+            children: [
+                {
+                    path: '',
+                    name: 'AppraisalBuyPage',
+                    component: AppraisalBuyPage,
+                }, {
+                    path: 'buy',
+                    name: 'AppraisalBuyPage',
+                    component: AppraisalBuyPage,
+                }, {
+                    path: 'step1',
+                    name: 'AppraisalTestStepPage',
+                    component: AppraisalTestStepPage,
+                }
+                , {
+                    path: 'step2',
+                    name: 'AppraisalTestStep2Page',
+                    component: AppraisalTestStep2Page,
+                }
+
+            ]
         },
         { // 政策解读
             path: '/entrance',

@@ -852,3 +852,142 @@
   line-height: 35px;
   text-indent: 2em;
 }
+
+/* 专业测评 step1 */
+.appl-test-contians {
+  margin-top: 35px;
+}
+
+.appl-test-top {
+  border: solid 1px #e5e5e5;
+}
+
+.appl-test-title {
+  font-size: 18px;
+  color: #3293f7;
+  background-color: #eee;
+  padding: 30px 25px;
+}
+
+.appl-test-info {
+  color: #b4b4b4;
+  padding: 30px 25px;
+  background-color: #fff;
+}
+
+.appl-test-info2 {
+  padding: 10px 25px;
+  color: #b4b4b4;
+  background-color: #fff;
+}
+
+.appl-test-text {
+  color: #f00;
+}
+
+.appl-test-item {
+  margin-bottom: 10px;
+  padding: 0 25px;
+  background-color: #fff;
+}
+
+.appl-test-item h3 {
+  color: #3293f7;
+}
+
+.appl-test-item h3 i {
+  border-radius: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #3293f7;
+  margin-right: 15px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.appl-test-ul {
+  padding-bottom: 30px;
+}
+
+.appl-test-ul li {
+  width: 25%;
+  float: left;
+  margin-top: 25px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.appl-test-ul li .el-checkbox__label {
+  white-space: normal;
+  margin-top: -3px;
+}
+
+.appl-test-ul li .el-checkbox__input {
+  vertical-align: top;
+}
+
+.appl-test-btn {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: #3494f6;
+  width: 240px;
+  border-radius: 8px;
+  margin: 50px auto 70px;
+}
+
+.appl-test-box {
+  background-color: #fff;
+  padding-bottom: 45px;
+}
+
+.appl-test-box li {
+  width: 50%;
+  float: left;
+  padding-top: 30px;
+}
+
+.appl-test-box h5 {
+  padding-bottom: 15px;
+}
+
+.appl-test-box-p a {
+  display: block;
+  width: 60px;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+  border: solid 1px #e5e5e5;
+  border-radius: 3px;
+  float: left;
+  margin-right: 3%;
+}
+
+.appl-test-box-p a.active {
+  margin-right: 0;
+}
+
+.appl-test-box-btn {
+  width: 490px;
+  margin: 50px auto 70px;
+}
+
+.appl-test-box-btn a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: #3494f6;
+  width: 240px;
+  border-radius: 8px;
+  float: left;
+}
+
+.appl-test-box-btn a.appl-test-box-btn-reg {
+  background-color: #d2d2d2;
+  width: 200px;
+  float: right;
+}

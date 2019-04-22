@@ -1,13 +1,12 @@
 <template>
-  <div>
-    <div>专业测评-index</div>
+  <div class="bfb80">
     <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "AppraisalIndexPage",
   data() {
     return {
       msg: "Welcome to Your Vue.js App"
