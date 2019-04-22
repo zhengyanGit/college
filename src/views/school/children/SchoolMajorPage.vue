@@ -66,7 +66,7 @@
               <el-row>
                 <el-col :span="4">
                   <div class="grid-content">
-                    <a href="#">哲学</a>
+                    <router-link class="school-list-tab-name" :to="{ path: '/school/major/123'}">哲学</router-link>
                   </div>
                 </el-col>
                 <el-col :span="4">

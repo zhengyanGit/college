@@ -10,11 +10,41 @@
           label-width="100px"
           class="reg-ruleForm"
         >
+          <h3 class="reg-title">注册信息：</h3>
+          <el-form-item label="用户名" prop="area">
+            <el-input v-model="ruleForm.name"></el-input>
+          </el-form-item>
+          <el-form-item label="验证码" prop="area">
+            <el-input v-model="ruleForm.name"></el-input>
+          </el-form-item>
+          <el-form-item label="短信验证" prop="area">
+            <el-input class="reg-yzm" v-model="ruleForm.name"></el-input>
+            <el-button type="warning" class="reg-yzm-btn">获取验证码</el-button>
+          </el-form-item>
+          <el-form-item label="密码" prop="area">
+            <el-input v-model="ruleForm.name"></el-input>
+          </el-form-item>
+          <el-form-item label="确认密码" prop="area">
+            <el-input v-model="ruleForm.name"></el-input>
+          </el-form-item>
+
+          <h3 class="reg-title">
+            考生信息：
+            <span>为享受更优质的服务体验，请确保各项信息的真实性</span>
+          </h3>
           <el-form-item label="所在地区" prop="area">
             <el-cascader :options="areaOptions" v-model="ruleForm.area" @change="areaChange"></el-cascader>
           </el-form-item>
 
           <el-form-item label="考生姓名" prop="name">
+            <el-input v-model="ruleForm.name"></el-input>
+          </el-form-item>
+
+          <el-form-item label="就读中学" prop="name">
+            <el-input v-model="ruleForm.name"></el-input>
+          </el-form-item>
+
+          <el-form-item label="就读班级" prop="name">
             <el-input v-model="ruleForm.name"></el-input>
           </el-form-item>
 
@@ -37,7 +67,7 @@
             <el-date-picker v-model="ruleForm.year" type="year" placeholder="选择年"></el-date-picker>
           </el-form-item>
 
-          <el-form-item>
+          <el-form-item class="reg-submit">
             <el-button type="primary" @click="submitForm('ruleForm')">立即注册</el-button>
             <el-button @click="resetForm('ruleForm')">重置</el-button>
           </el-form-item>

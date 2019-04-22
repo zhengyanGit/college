@@ -55,11 +55,7 @@
           </el-col>
           <el-col class="head-mousemove" :span="3">
             <div class="grid-content">
-              <router-link
-                active-class="active"
-                class="nav-first"
-                :to="{ path: '/reported/list'}"
-              >志愿填报</router-link>
+              <router-link active-class="active" class="nav-first" :to="{ path: '/reported'}">志愿填报</router-link>
             </div>
           </el-col>
           <el-col class="head-mousemove" :span="3">

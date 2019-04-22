@@ -20,7 +20,7 @@ import SchoolScorePage from '@/views/school/children/SchoolScorePage' //院校�
 import SchoolSegmentPage from '@/views/school/children/SchoolSegmentPage' //一分一段查询
 import SchoolBatchPage from '@/views/school/children/SchoolBatchPage' //批次线查询
 
-import SchollDetailsPage from '@/views/school/children/school-details/SchollDetailsPage' //详情架子
+import SchollDetailsPage from '@/views/school/children/school-details/SchollDetailsPage' //院校详情架子
 import SchollDetailsIntroPage from '@/views/school/children/school-details/SchollDetailsIntroPage' // 院系简介
 import SchollDetailsSettingPage from '@/views/school/children/school-details/SchollDetailsSettingPage' //院系设置
 import SchollDetailsMajorPage from '@/views/school/children/school-details/SchollDetailsMajorPage' //专业介绍
@@ -29,9 +29,17 @@ import SchollDetailsStudentPage from '@/views/school/children/school-details/Sch
 import SchollDetailsOwnPage from '@/views/school/children/school-details/SchollDetailsOwnPage' //自主招生
 import SchollDetailsFiercePage from '@/views/school/children/school-details/SchollDetailsFiercePage' //牛人帮
 
+import SchollDetailsMajorIndexPage from '@/views/school/children/major/IndexPage' //专业介绍详情架子
+import SchoolMajorInfoPage from '@/views/school/children/major/SchoolMajorInfoPage' //专业介绍-简介
+import SchoolMajorSettingPage from '@/views/school/children/major/SchoolMajorSettingPage' //专业介绍-开设院校
+import SchoolMajorFiercePage from '@/views/school/children/major/SchoolMajorFiercePage' //专业介绍-牛人帮
+
+
 
 //志愿填报
-import ReportedListPage from '@/views/reported/ReportedListPage'
+import ReportedIndexPage from '@/views/reported/ReportedIndexPage'  //架子
+import ReportedSimulationPage from '@/views/reported/ReportedSimulationPage' //志愿填报-志愿填报模拟
+
 
 //专业测评
 import AppraisalIndexPage from '@/views/appraisal/AppraisalIndexPage'
@@ -62,169 +70,205 @@ Vue.use(Router)
 export default new Router({
     mode: 'history',
     routes: [{
+        path: '/',
+        name: 'FrontPage',
+        component: FrontPage,
+        children: [{
             path: '/',
-            name: 'FrontPage',
-            component: FrontPage,
-            children: [{
-                    path: '/',
-                    name: 'HomePage',
-                    component: HomePage,
-                },
-                { // 高校数据-列表
-                    path: '/school',
-                    name: 'SchoolIndexPage',
-                    component: SchoolIndexPage,
-                    children: [{ // 院校名录
-                            path: '',
-                            name: 'SchoolListPage',
-                            component: SchoolListPage,
-                        },
-                        { // 院校名录
-                            path: 'list',
-                            name: 'SchoolListPage',
-                            component: SchoolListPage,
-                        },
-                        { //专业介绍
-                            path: 'major',
-                            name: 'SchoolMajorPage',
-                            component: SchoolMajorPage
-                        }, { //院校分数查询
-                            path: 'score',
-                            name: 'SchoolScorePage',
-                            component: SchoolScorePage
-                        }, { //一分一段查询
-                            path: 'segment',
-                            name: 'SchoolSegmentPage',
-                            component: SchoolSegmentPage
-                        }, { // 批次线查询
-                            path: 'batch',
-                            name: 'SchoolBatchPage',
-                            component: SchoolBatchPage
-                        }
-                    ]
-                },
-                { // 高校数据-详情
-                    path: '/school/details/:detailId',
-                    name: 'SchollDetailsPage',
-                    component: SchollDetailsPage,
-                    children: [{ // 院校简介
-                        path: '',
-                        name: 'SchollDetailsIntroPage',
-                        component: SchollDetailsIntroPage,
-                    }, { // 院校简介
-                        path: 'intro',
-                        name: 'SchollDetailsIntroPage',
-                        component: SchollDetailsIntroPage,
-                    }, {
-                        path: 'setting', //院系设置
-                        name: 'SchollDetailsSettingPage',
-                        component: SchollDetailsSettingPage,
-                    }, {
-                        path: 'major', //专业介绍
-                        name: 'SchollDetailsMajorPage',
-                        component: SchollDetailsMajorPage,
-                    }, {
-                        path: 'enroll', //录取数据
-                        name: 'SchollDetailsEnrollPage',
-                        component: SchollDetailsEnrollPage,
-                    }, {
-                        path: 'student', //招生章程
-                        name: 'SchollDetailsStudentPage',
-                        component: SchollDetailsStudentPage,
-                    }, {
-                        path: 'own', //自主招生
-                        name: 'SchollDetailsOwnPage',
-                        component: SchollDetailsOwnPage,
-                    }, {
-                        path: 'fierce', //牛人帮
-                        name: 'SchollDetailsFiercePage',
-                        component: SchollDetailsFiercePage,
-                    }]
-                },
-                { // 志愿填报
-                    path: '/reported/list',
-                    name: 'ReportedListPage',
-                    component: ReportedListPage,
-                },
-                { // 专业测评
-                    path: '/appraisal',
-                    name: 'AppraisalIndexPage',
-                    component: AppraisalIndexPage,
-                },
-                { // 政策解读
-                    path: '/entrance',
-                    name: 'EntranceListPage',
-                    component: EntranceListPage,
-                },
-                { // 选科
-                    path: '/entrance/specialty',
-                    name: 'SpecialtyListPage',
-                    component: SpecialtyListPage,
-                },
-                { //自主招生
-                    path: '/recruit',
-                    name: 'RecruitIndexPage',
-                    component: RecruitIndexPage,
-                    children: [{ //院校专业查询
-                        path: '',
-                        name: 'RecruitListPage',
-                        component: RecruitListPage,
-                    }, { //院校专业查询
-                        path: 'lsit',
-                        name: 'RecruitListPage',
-                        component: RecruitListPage,
-                    }, { //自招数据查询
-                        path: 'oneself',
-                        name: 'RecruitOneselfPage',
-                        component: RecruitOneselfPage,
-                    }, { //自主招生1对1
-                        path: 'student',
-                        name: 'RecruitStudentPage',
-                        component: RecruitStudentPage,
-                    }]
-                },
-                { //社区
-                    path: '/community/info',
-                    name: 'CommunityInfoPage',
-                    component: CommunityInfoPage
-                }
+            name: 'HomePage',
+            component: HomePage,
+        },
+        { // 高校数据-列表
+            path: '/school',
+            name: 'SchoolIndexPage',
+            component: SchoolIndexPage,
+            children: [{ // 院校名录
+                path: '',
+                name: 'SchoolListPage',
+                component: SchoolListPage,
+            },
+            { // 院校名录
+                path: 'list',
+                name: 'SchoolListPage',
+                component: SchoolListPage,
+            },
+            { //专业介绍
+                path: 'major',
+                name: 'SchoolMajorPage',
+                component: SchoolMajorPage
+            }, { //院校分数查询
+                path: 'score',
+                name: 'SchoolScorePage',
+                component: SchoolScorePage
+            }, { //一分一段查询
+                path: 'segment',
+                name: 'SchoolSegmentPage',
+                component: SchoolSegmentPage
+            }, { // 批次线查询
+                path: 'batch',
+                name: 'SchoolBatchPage',
+                component: SchoolBatchPage
+            }
             ]
         },
-        {
-            path: '/platform',
-            name: 'PlatformPage',
-            component: PlatformPage,
-            children: [{
-                    path: '/',
-                    name: 'WelcomePage',
-                    component: WelcomePage
+        {  // 高招数据-专业详情
+            path: '/school/major/:detailId',
+            name: 'SchollDetailsMajorIndexPage',
+            component: SchollDetailsMajorIndexPage,
+            children: [
+                { // 专业介绍
+                    path: '',
+                    name: 'SchoolMajorInfoPage',
+                    component: SchoolMajorInfoPage,
+                },
+                { // 专业介绍
+                    path: 'info',
+                    name: 'SchoolMajorInfoPage',
+                    component: SchoolMajorInfoPage,
                 },
                 {
-                    path: 'release',
-                    name: 'ReleasePage',
-                    component: ReleasePage
+                    path: 'setting',  //开设院校
+                    name: 'SchoolMajorSettingPage',
+                    component: SchoolMajorSettingPage,
+
+                },
+                {
+                    path: 'fierce',  //牛人帮
+                    name: 'SchoolMajorFiercePage',
+                    component: SchoolMajorFiercePage,
+
                 }
             ]
         },
-        {
-            path: '/login',
-            name: 'LoginPage',
-            component: LoginPage
+        { // 高校数据-详情
+            path: '/school/details/:detailId',
+            name: 'SchollDetailsPage',
+            component: SchollDetailsPage,
+            children: [{ // 院校简介
+                path: '',
+                name: 'SchollDetailsIntroPage',
+                component: SchollDetailsIntroPage,
+            }, { // 院校简介
+                path: 'intro',
+                name: 'SchollDetailsIntroPage',
+                component: SchollDetailsIntroPage,
+            }, {
+                path: 'setting', //院系设置
+                name: 'SchollDetailsSettingPage',
+                component: SchollDetailsSettingPage,
+            }, {
+                path: 'major', //专业介绍
+                name: 'SchollDetailsMajorPage',
+                component: SchollDetailsMajorPage,
+            }, {
+                path: 'enroll', //录取数据
+                name: 'SchollDetailsEnrollPage',
+                component: SchollDetailsEnrollPage,
+            }, {
+                path: 'student', //招生章程
+                name: 'SchollDetailsStudentPage',
+                component: SchollDetailsStudentPage,
+            }, {
+                path: 'own', //自主招生
+                name: 'SchollDetailsOwnPage',
+                component: SchollDetailsOwnPage,
+            }, {
+                path: 'fierce', //牛人帮
+                name: 'SchollDetailsFiercePage',
+                component: SchollDetailsFiercePage,
+            }]
         },
-        {
-            path: '/register',
-            name: 'RegisterPage',
-            component: RegisterPage
+        { // 志愿填报
+            path: '/reported',
+            name: 'ReportedIndexPage',
+            component: ReportedIndexPage,
+            children: [
+                {
+                    path: '',
+                    name: 'ReportedSimulationPage',
+                    component: ReportedSimulationPage,
+                }
+            ]
         },
-        {
-            path: '*',
-            name: 'NotFindePage',
-            component: NotFindePage
+        { // 专业测评
+            path: '/appraisal',
+            name: 'AppraisalIndexPage',
+            component: AppraisalIndexPage
         },
-        { //动态路由
-            path: '/list/:listid',
-            name: 'list',
-            component: list
+        { // 政策解读
+            path: '/entrance',
+            name: 'EntranceListPage',
+            component: EntranceListPage,
+        },
+        { // 选科
+            path: '/entrance/specialty',
+            name: 'SpecialtyListPage',
+            component: SpecialtyListPage,
+        },
+        { //自主招生
+            path: '/recruit',
+            name: 'RecruitIndexPage',
+            component: RecruitIndexPage,
+            children: [{ //院校专业查询
+                path: '',
+                name: 'RecruitListPage',
+                component: RecruitListPage,
+            }, { //院校专业查询
+                path: 'lsit',
+                name: 'RecruitListPage',
+                component: RecruitListPage,
+            }, { //自招数据查询
+                path: 'oneself',
+                name: 'RecruitOneselfPage',
+                component: RecruitOneselfPage,
+            }, { //自主招生1对1
+                path: 'student',
+                name: 'RecruitStudentPage',
+                component: RecruitStudentPage,
+            }]
+        },
+        { //社区
+            path: '/community/info',
+            name: 'CommunityInfoPage',
+            component: CommunityInfoPage
         }
+        ]
+    },
+    {
+        path: '/platform',
+        name: 'PlatformPage',
+        component: PlatformPage,
+        children: [{
+            path: '/',
+            name: 'WelcomePage',
+            component: WelcomePage
+        },
+        {
+            path: 'release',
+            name: 'ReleasePage',
+            component: ReleasePage
+        }
+        ]
+    },
+    {
+        path: '/login',
+        name: 'LoginPage',
+        component: LoginPage
+    },
+    {
+        path: '/register',
+        name: 'RegisterPage',
+        component: RegisterPage
+    },
+    {
+        path: '*',
+        name: 'NotFindePage',
+        component: NotFindePage
+    },
+    { //动态路由
+        path: '/list/:listid',
+        name: 'list',
+        component: list
+    }
     ]
 })

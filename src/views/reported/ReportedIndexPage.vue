@@ -1,13 +1,12 @@
 <template>
-  <div>
-    <div>志愿填报-列表</div>
+  <div class="bfb80">
     <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "ReportedSimulationPage",
   data() {
     return {
       msg: "Welcome to Your Vue.js App"

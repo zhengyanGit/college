@@ -1,5 +1,5 @@
 <template>
-  <div>专业介绍</div>
+  <div>院校专业</div>
 </template>
 
 <script>

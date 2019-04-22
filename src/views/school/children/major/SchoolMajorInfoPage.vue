@@ -1,6 +1,6 @@
 <template>
   <div>
-    <title-component title="院校介绍"></title-component>
+    <title-component title="专业详情"></title-component>
     <div class="school-dts-intro-body">
       <p>北京大学创办于1898年，初名京师大学堂，是中国第一所国立综合性大学，也是当时中国最高教育行政机关。辛亥革命后，于1912年改为现名。</p>
       <p>作为新文化运动的中心和“五四”运动的策源地，作为中国最早传播马克思主义和民主科学思想的发祥地，作为中国共产党最早的活动基地，北京大学为民族的振兴和解放、国家的建设和发展、社会的文明和进步做出了不可替代的贡献，在中国走向现代化的进程中起到了重要的先锋作用。爱国、进步、民主、科学的传统精神和勤奋、严谨、求实、创新的学风在这里生生不息、代代相传。</p>
@@ -22,7 +22,7 @@ export default {
   components: {
     titleComponent
   },
-  name: "SchollDetailsMajorPage",
+  name: "SchoolMajorInfoPage",
   data() {
     return {
       msg: "Welcome to Your Vue.js App"
