@@ -98,7 +98,6 @@
         </li>
       </ul>
     </div>
-    <a href="#" class="appl-test-btn"></a>
     <router-link class="appl-test-btn" :to="{ path: '/appraisal/step2'}">提交并进行下一步测试</router-link>
   </div>
 </template>

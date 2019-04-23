@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div>资讯-list</div>
+  <div class="bfb80">
+    <div>家长社区-高招咨询</div>
     <router-view/>
   </div>
 </template>

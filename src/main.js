@@ -12,11 +12,16 @@ import VueQuillEditor from 'vue-quill-editor';
 import 'quill/dist/quill.core.css';
 import 'quill/dist/quill.snow.css';
 import 'quill/dist/quill.bubble.css';
+import '@/filters';
+import '@/axios';
+import Utile from '@/lib/utils';
 
 
 Vue.config.productionTip = false;
 Vue.use(ElementUI, { zIndex: 3000 });
 Vue.use(VueQuillEditor);
+Vue.use(Utile);
+
 
 /* eslint-disable no-new */
 new Vue({

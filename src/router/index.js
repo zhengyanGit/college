@@ -39,7 +39,7 @@ import SchoolMajorFiercePage from '@/views/school/children/major/SchoolMajorFier
 //志愿填报
 import ReportedIndexPage from '@/views/reported/ReportedIndexPage'  //架子
 import ReportedSimulationPage from '@/views/reported/ReportedSimulationPage' //志愿填报-志愿填报模拟
-
+import ReportedBuyPage from '@/views/reported/buyPage' //志愿填报购买
 
 //专业测评
 import AppraisalIndexPage from '@/views/appraisal/AppraisalIndexPage' // 架子
@@ -74,7 +74,6 @@ export default new Router({
     mode: 'history',
     routes: [{
         path: '/',
-        name: 'FrontPage',
         component: FrontPage,
         children: [{
             path: '/',
@@ -83,11 +82,9 @@ export default new Router({
         },
         { // 高校数据-列表
             path: '/school',
-            name: 'SchoolIndexPage',
             component: SchoolIndexPage,
             children: [{ // 院校名录
                 path: '',
-                name: 'SchoolListPage',
                 component: SchoolListPage,
             },
             { // 院校名录
@@ -116,12 +113,10 @@ export default new Router({
         },
         {  // 高招数据-专业详情
             path: '/school/major/:detailId',
-            name: 'SchoolDetailsMajorIndexPage',
             component: SchoolDetailsMajorIndexPage,
             children: [
                 { // 专业介绍
                     path: '',
-                    name: 'SchoolMajorInfoPage',
                     component: SchoolMajorInfoPage,
                 },
                 { // 专业介绍
@@ -145,11 +140,9 @@ export default new Router({
         },
         { // 高校数据-详情
             path: '/school/details/:detailId',
-            name: 'SchoolDetailsPage',
             component: SchoolDetailsPage,
             children: [{ // 院校简介
                 path: '',
-                name: 'SchoolDetailsIntroPage',
                 component: SchoolDetailsIntroPage,
             }, { // 院校简介
                 path: 'intro',
@@ -183,24 +176,27 @@ export default new Router({
         },
         { // 志愿填报
             path: '/reported',
-            name: 'ReportedIndexPage',
             component: ReportedIndexPage,
             children: [
                 {
                     path: '',
                     name: 'ReportedSimulationPage',
                     component: ReportedSimulationPage,
+                },
+                {
+                    path: 'buy',
+                    name: 'ReportedBuyPage',
+                    component: ReportedBuyPage,
+
                 }
             ]
         },
         { // 专业测评
             path: '/appraisal',
-            name: 'AppraisalIndexPage',
             component: AppraisalIndexPage,
             children: [
                 {
                     path: '',
-                    name: 'AppraisalBuyPage',
                     component: AppraisalBuyPage,
                 }, {
                     path: 'buy',
@@ -231,11 +227,9 @@ export default new Router({
         },
         { //自主招生
             path: '/recruit',
-            name: 'RecruitIndexPage',
             component: RecruitIndexPage,
             children: [{ //院校专业查询
                 path: '',
-                name: 'RecruitListPage',
                 component: RecruitListPage,
             }, { //院校专业查询
                 path: 'lsit',
@@ -260,7 +254,6 @@ export default new Router({
     },
     {
         path: '/platform',
-        name: 'PlatformPage',
         component: PlatformPage,
         children: [{
             path: '/',

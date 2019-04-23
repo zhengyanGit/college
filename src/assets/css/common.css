@@ -240,6 +240,10 @@ body {
   margin-right: 5px;
 }
 
+.mt50 {
+  margin-top: 50px;
+}
+
 
 /* 字体图标库 */
 @font-face {

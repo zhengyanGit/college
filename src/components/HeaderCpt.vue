@@ -93,15 +93,6 @@
               >家长招生</router-link>
             </div>
           </el-col>
-          <el-col class="head-mousemove" :span="3">
-            <div class="grid-content">
-              <router-link
-                active-class="active"
-                class="nav-first"
-                :to="{ path: '/school/details/123'}"
-              >院校详情</router-link>
-            </div>
-          </el-col>
         </el-row>
       </div>
     </div>
