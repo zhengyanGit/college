@@ -1223,3 +1223,12 @@
   padding-top: 10px;
   color: #999999;
 }
+
+/* 用户 箭头白色 */
+.user-menu .el-submenu__title i {
+  color: #fff !important;
+}
+
+.user-menu li.is-active {
+  background-color: #0844bf !important;
+}

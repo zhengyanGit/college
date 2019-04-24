@@ -5,6 +5,7 @@ import Router from 'vue-router'
 import FrontPage from '@/FrontPage'
 import PlatformPage from '@/PlatformPage'
 import SinglePage from '@/SinglePage' // 欢迎页
+import UserPage from '@/UserPage' // 用户框架
 
 //spa页面
 import HomePage from '@/views/spa/Homepage'
@@ -65,6 +66,9 @@ import list from '@/views/user-info/list' //  临时
 //后台页面
 import WelcomePage from '@/views/platform/WelcomePage' // 欢迎页
 import ReleasePage from '@/views/platform/ReleasePage' // 资讯发布
+
+//用户页面
+import IndexPage from '@/views/user/IndexPage' // 欢迎页
 
 
 
@@ -251,6 +255,15 @@ export default new Router({
             component: CommunityInfoPage
         }
         ]
+    },
+    {  //用户页面
+        path: '/user',
+        component: UserPage,
+        children: [{
+            path: '/',
+            name: 'IndexPage',
+            component: IndexPage
+        }],
     },
     {
         path: '/platform',

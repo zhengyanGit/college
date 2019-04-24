@@ -14,7 +14,7 @@
           <router-link class="head-a head-p-left pr20" :to="{ path: '/platform'}">后台</router-link>
           <router-link class="head-a head-p-left pr20" :to="{ path: '/login'}">请登录</router-link>
           <router-link class="head-a head-p-left pr20" :to="{ path: '/register'}">免费注册</router-link>
-          <p class="head-title-1 head-p-left">我的牛人帮</p>
+          <router-link :to="{ path: '/user' }" class="head-title-1 head-p-left">我的牛人帮</router-link>
         </div>
       </div>
     </div>

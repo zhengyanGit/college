@@ -2,7 +2,7 @@
   <div class="bfb80 school-list-body">
     <div class="school-list-filter-box">
       <div class="school-list-seach-box">
-        <school-search-component :data="seachData"></school-search-component>
+        <school-search-component @sendSearchFn="_sendSearchFn" :data="seachData"></school-search-component>
       </div>
       <ul class="school-list-filter-body">
         <li class="clearfix">
@@ -196,6 +196,9 @@ export default {
     },
     tableClassName({ row, rowIndex }) {
       return "school-list-tab-head";
+    },
+    _sendSearchFn(sendParams) {
+      console.log(sendParams);
     }
   }
 };

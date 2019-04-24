@@ -1,5 +1,5 @@
 <template>
-  <div>空</div>
+  <router-view></router-view>
 </template>
 
 <script>

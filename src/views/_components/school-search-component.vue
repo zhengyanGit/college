@@ -8,10 +8,11 @@
           icon="el-icon-search"
           type="primary"
           class="school-list-seach-btn"
+          @click="_searchFn"
         >搜 索</el-button>
       </el-input>
     </div>
-    <a href="#" class="school-list-seach-href">专业倾向测试 ></a>
+    <slot></slot>
   </div>
 </template>
 <script>
@@ -22,6 +23,11 @@ export default {
     return {
       schoolName: ""
     };
+  },
+  methods: {
+    _searchFn() {
+      this.$emit("sendSearchFn", this.schoolName);
+    }
   }
 };
 </script>

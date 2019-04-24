@@ -52,18 +52,18 @@
             </el-select>
           </div>
         </el-col>
-        <el-col :span="1">
+        <el-col :span="2">
           <div class="grid-content school-dts-enroll-text-right">总分：</div>
         </el-col>
-        <el-col :span="3">
+        <el-col :span="2">
           <div class="grid-content">
             <el-input v-model="value" placeholder="请输入内容"></el-input>
           </div>
         </el-col>
-        <el-col :span="1">
+        <el-col :span="2">
           <div class="grid-content school-dts-enroll-text-right">位次：</div>
         </el-col>
-        <el-col :span="3">
+        <el-col :span="2">
           <div class="grid-content">
             <el-input v-model="value" placeholder="请输入内容"></el-input>
           </div>
